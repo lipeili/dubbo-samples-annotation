@@ -1,1 +1,3 @@
 invokeFilter=org.apache.dubbo.samples.annotation.filter.InvokeFilter
+transportIPFilter=org.apache.dubbo.samples.annotation.filter.TransportIPFilter
+

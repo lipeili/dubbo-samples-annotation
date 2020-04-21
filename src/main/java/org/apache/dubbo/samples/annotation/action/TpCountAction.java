@@ -19,15 +19,14 @@
 
 package org.apache.dubbo.samples.annotation.action;
 
-import org.apache.dubbo.config.annotation.Method;
 import org.apache.dubbo.config.annotation.Reference;
-import org.apache.dubbo.samples.annotation.AnnotationConstants;
-import org.apache.dubbo.samples.annotation.api.GreetingService;
-import org.apache.dubbo.samples.annotation.api.HelloService;
+import org.apache.dubbo.rpc.RpcContext;
+import org.apache.dubbo.samples.annotation.Utils.IpAddressHolderUtil;
+import org.apache.dubbo.samples.annotation.Utils.IpAddressUtil;
 import org.apache.dubbo.samples.annotation.api.TpCountService;
 import org.springframework.stereotype.Component;
 
-@Component("tpCountAction")
+@Component
 public class TpCountAction {
 
     @Reference(interfaceClass = TpCountService.class,
@@ -60,5 +59,13 @@ public class TpCountAction {
         tpCountService.sayHello2("sayHello2");
         tpCountService.sayHello3("sayHello3");
     }
+
+    public void ipHello() {
+
+        tpCountService.sayHello1("sayHello1");
+        tpCountService.sayHello2("sayHello2");
+        tpCountService.sayHello3("sayHello3");
+    }
+
 
 }
