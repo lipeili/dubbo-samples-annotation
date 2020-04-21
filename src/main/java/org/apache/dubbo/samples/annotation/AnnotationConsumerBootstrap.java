@@ -54,11 +54,10 @@ public class AnnotationConsumerBootstrap {
                         System.out.print("method:" + entry.getKey() + "   ");
                         System.out.print("TP90:" + entry.getValue().get((int) (size * 0.9)) + " ms" + "   ");
                         System.out.println("TP99:" + entry.getValue().get((int) (size * 0.99))  + " ms");
-                        System.out.println();
-                        System.out.println();
-
                     }
 
+                    System.out.println();
+                    System.out.println();
                 }
 
 
