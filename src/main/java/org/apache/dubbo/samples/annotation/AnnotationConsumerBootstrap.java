@@ -50,7 +50,7 @@ public class AnnotationConsumerBootstrap {
 
                         Collections.sort(entry.getValue());
 
-                        long size = InvokeFilter.costContainer.size();
+                        long size = entry.getValue().size();
                         System.out.print("method:" + entry.getKey() + "   ");
                         System.out.print("TP90:" + entry.getValue().get((int) (size * 0.9)) + " ms" + "   ");
                         System.out.println("TP99:" + entry.getValue().get((int) (size * 0.99))  + " ms");
