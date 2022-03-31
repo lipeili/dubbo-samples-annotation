@@ -31,7 +31,7 @@
         <dubbo.port>20880</dubbo.port>
         <zookeeper.port>2181</zookeeper.port>
         <main-class>org.apache.dubbo.samples.annotation.AnnotationProviderBootstrap</main-class>
-        <boot.version>2.0.2.RELEASE</boot.version>
+        <boot.version>2.5.12</boot.version>
     </properties>
 
     <dependencies>
